@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Usuário</title>
+</head>
+<body>
+
+    <h1>Olá, <%= usuario.nome %></h1>
+    <p>Perfil: <%= usuario.perfil %></p>
+
+    <% if (usuario.perfil === 'user') { %>
+        <button id="novoChamado">Novo Chamado</button>
+    <% } %>
+
+    <% if (usuario.perfil === 'tecnico') { %>
+        <button id="assumirChamado">Assumir Chamado</button>
+    <% } %>
+
+    <% if (usuario.perfil === 'admin') { %>
+        <button id="gerenciarUsuarios">Gerenciar Usuários</button>
+    <% } %>
+
+    <script src="/js/user.js"></script>
+
+</body>
+</html>

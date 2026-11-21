@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Técnico</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Sistema de Chamados</h1>
+
+    <div>
+        <strong><%= usuario.nome %></strong>
+        <span>(Técnico)</span>
+    </div>
+
+    <nav>
+        <a href="/logout">Sair</a>
+    </nav>
+</header>
+
+<main>
+
+    <h2>Painel Técnico</h2>
+
+    <section>
+
+        <a href="/chamados">
+            Ver Todos os Chamados
+        </a>
+
+    </section>
+
+    <h3>Chamados Abertos</h3>
+
+    <% chamados.forEach(chamado => { %>
+
+        <div class="card">
+
+            <h4><%= chamado.titulo %></h4>
+
+            <p>
+                Solicitante:
+                <%= chamado.nomeUsuario %>
+            </p>
+
+            <p>
+                Status:
+                <%= chamado.status %>
+            </p>
+
+            <form
+                action="/chamados/<%= chamado.id %>/assumir"
+                method="POST">
+
+                <button type="submit">
+                    Assumir Chamado
+                </button>
+
+            </form>
+
+        </div>
+
+    <% }) %>
+
+</main>
+
+<script src="/js/dashboard-tecnico.js"></script>
+
+</body>
+</html>
