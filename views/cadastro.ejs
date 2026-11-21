@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/cadastro.css">
+</head>
+
+<body>
+
+    <center>
+
+        <section id="N">
+
+            <h1>
+                <font size="8%">Cadastro</font>
+            </h1>
+
+            <br><br>
+
+            <% if (erro) { %>
+                <p style="color: red;">
+                    <%= erro %>
+                </p>
+            <% } %>
+
+            <% if (sucesso) { %>
+                <p style="color: green;">
+                    <%= sucesso %>
+                </p>
+            <% } %>
+
+            <form action="/cadastro" method="POST">
+
+                <label class="nome" for="nome">
+                    Nome:
+                </label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    class="O"
+                    placeholder="Digite seu nome"
+                    required
+                >
+
+    <br><br>
+
+                <label class="email" for="email">
+                    E-mail:
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="E"
+                    placeholder="Digite seu email"
+                    required
+                >
+
+                <br><br>
+
+                <label class="senha" for="senha">
+                    Senha:
+                </label>
+
+                <input
+                    type="password"
+                    id="senha"
+                    name="senha"
+                    class="S"
+                    placeholder="Crie uma senha"
+                    required
+                >
+
+                <br><br>
+
+                <label class="csenha" for="csenha">
+                    Confirmar Senha:
+                </label>
+
+                <input
+                    type="password"
+                    id="csenha"
+                    name="csenha"
+                    class="CS"
+                    placeholder="Confirmar senha"
+                    required
+                >
+
+                <br><br><br>
+
+                <button
+                    class="proximo"
+                    type="submit"
+                >
+                    Cadastrar
+                </button>
+
+            </form>
+
+            <br><br>
+
+            <p>
+                Já possui uma conta?
+                <a href="/login">Fazer Login</a>
+            </p>
+
+        </section>
+
+    </center>
+
+</body>
+</html>

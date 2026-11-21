@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/login.css">
+</head>
+
+<body>
+
+    <br><br><br><br>
+
+    <center>
+        <section class="lo">
+
+            <h1>
+                <font size="8%">Login</font>
+            </h1>
+
+            <br><br><br>
+
+            <% if (mensagemErro) { %>
+                <p style="color:red;"><%= mensagemErro %></p>
+            <% } %>
+
+            <form action="/login" method="POST">
+
+                <label class="email" for="email">
+                    E-mail:
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="E"
+                    placeholder="Digite seu email"
+                    required
+                >
+
+                <br><br><br><br>
+
+                <label class="senha" for="senha">
+                    Senha:
+                </label>
+
+                <input
+                    type="password"
+                    id="senha"
+                    name="senha"
+                    class="S"
+                    placeholder="Digite sua senha"
+                    required
+                >
+
+                <br><br><br><br>
+
+                <button class="Botao" type="submit">
+                    Entrar
+                </button>
+
+            </form>
+
+            <br><br>
+
+            <a href="/auth/google">
+                <button class="google" type="button">
+                    Entrar com Google
+                </button>
+            </a>
+
+            <br><br>
+
+            <p>
+                Não possui conta?
+                <a href="/cadastro">Cadastre-se</a>
+            </p>
+
+        </section>
+    </center>
+
+</body>
+</html>
