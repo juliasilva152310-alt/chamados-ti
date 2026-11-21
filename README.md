@@ -1,6 +1,10 @@
+Nome do aluno(a): Júlia Beatriz Nascimento da Silva
+
+Link de aplicação do Render: https://chamados-ti-1-5672.onrender.com
+
 # HelpDesk TI — Organização de Chamados
 
-Sistema web local para abertura, acompanhamento e organização de chamados de TI, construído no padrão **MVC** com **Node.js, Express, EJS, CSS e Sequelize** (SQLite).
+Sistema web local para abertura, acompanhamento e organização de chamados de TI, construído no padrão **MVC** com **Node.js, Express, EJS, CSS e Sequelize** (SQLite)
 
 > Sem login: o sistema foi pensado para rodar localmente de forma simples.
 
