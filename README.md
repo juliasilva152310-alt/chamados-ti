@@ -1,6 +1,6 @@
 Nome do aluno (a): Júlia Beatriz Nascimento da Silva
 
-Link de aplicação do Render: https://chamados-ti-1-5672.onrender.com
+Link de aplicação do Render: https://chamados-ti-1-1gvs.onrender.com/
 
 Credenciais de teste:  Usuario :"kala@gmail.com", Adiministrador: "adimyuri@empresa.com" e Tecnico: "camiti@empresa.com"
                    
