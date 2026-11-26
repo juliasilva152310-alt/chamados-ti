@@ -2,6 +2,9 @@ Nome do aluno(a): Júlia Beatriz Nascimento da Silva
 
 Link de aplicação do Render: https://chamados-ti-1-5672.onrender.com
 
+Credenciais de teste: "kala@gmail.com", "adimyuri@empresa.com" e "camiti@empresa.com"
+                   
+
 # HelpDesk TI — Organização de Chamados
 
 Sistema web local para abertura, acompanhamento e organização de chamados de TI, construído no padrão **MVC** com **Node.js, Express, EJS, CSS e Sequelize** (SQLite)
