@@ -1,4 +1,4 @@
-Nome do aluno(a): Júlia Beatriz Nascimento da Silva
+Nome do aluno (a): Júlia Beatriz Nascimento da Silva
 
 Link de aplicação do Render: https://chamados-ti-1-5672.onrender.com
 
